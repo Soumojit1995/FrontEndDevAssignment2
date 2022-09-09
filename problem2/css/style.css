@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,300&family=Poppins:wght@200;300;400;600;700;800&display=swap");
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	position: relative;
+	background: rgb(56, 2, 49);
+	background: linear-gradient(
+		150deg,
+		#ff3967 0%,
+		rgba(157, 87, 144, 1) 44%,
+		#601bf1 100%
+	);
+	height: auto;
+	padding: 20px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+
+	grid-gap: 1rem;
+}
+
+.wrapper > div {
+	padding: 0 1rem;
+}
+
+/* first row */
+.first-row {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-column-gap: 1em;
+	align-items: center;
+}
+
+.first-row p {
+	background-color: #FCCA06;
+	padding: 1rem;
+    padding: 5px;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Second-row */
+
+.second-row {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-gap: 1em;
+}
+
+.second-row-banner {
+	position: relative;
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+    min-height: 300px;
+    max-height: 416px;
+    overflow: hidden;
+}
+
+.second-row-banner img {
+    width: 100%;
+    height: 661px;
+    object-fit: cover;
+}
+.second-row-banner .second-row-banner-content{
+    position: absolute;
+    padding-left: 25px;
+}
+
+.second-row-banner .second-row-banner-content h2 {
+	font-size: 2rem;
+	color: #000;
+    background-color: #FCCA06;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.second-row-banner .second-row-banner-content span {
+	font-size: 1.2rem;
+	color: #000;
+    background-color: #FCCA06;
+}
+
+.second-row-price {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1em;
+    grid-auto-rows: minmax(200px, 200px);
+}
+
+.second-row-price > div {
+	background-color: #FCCA06;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.second-row-price p {
+	font-size: 3rem;
+	font-weight: 100;
+}
+.second-row-price span {
+	font-weight: 700;
+}
+
+/* Third row */
+
+.third-row {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1em;
+}
+
+.card {
+	width: 100%;
+	background-color: white;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.card img {
+	height: 60px;
+}
+
+.container {
+	width: 100%;
+	background-color: white;
+	display: flex;
+    flex-wrap: wrap;
+	align-items: center;
+}
+.fourth-row-img{
+    width: 35%;
+}
+.fourth-row-content{
+    width: 65%;
+    padding: 25px;
+}
+.container img {
+    width: 100%;
+}
+
+.container h4 {
+	margin-bottom: 1rem;
+}
+.container p {
+	margin-bottom: 1rem;
+}
+.container .info-btn{
+	padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FCCA06;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.fourth-row .container .arrow-img{
+    width: 16px;
+    height: 10px;
+}
+.container .info-btn:hover {
+    background: #000;
+    color: #fff;
+}
+.container .info-btn:hover img {
+    filter: brightness(0) invert(1);
+}
+
+/* fifth row */
+.fifth-row {
+	display: grid;
+	grid-template-columns: 1fr 0.2fr 1fr;
+	grid-gap: 1em;
+	text-align: center;
+	font-weight: 600;
+    align-items: center;
+}
+
+.fifth-row > div {
+	grid-auto-rows: minmax(10px, auto);
+}
+.fifth-row .fifth-row-mid {
+	font-size: 15px;
+}
+
+.fifth-row-1 .line-1 {
+	background: rgb(56, 2, 49);
+	background: linear-gradient(
+		150deg,
+		#ff3967 0%,
+		rgba(157, 87, 144, 1) 44%,
+		#FCCA06 100%
+	);
+	clip-path: polygon( 0% 50%, 100% 0, 100% 100%, 0 50%);
+}
+
+.fifth-row-1 .line-2 {
+	background: rgb(56, 2, 49);
+	background: linear-gradient(
+        250deg,
+        #f11bd9 0%,
+        rgba(157, 87, 144, 1) 44%,
+        #FCCA06 100%
+       );
+	clip-path: polygon(0 100%, 100% 50%, 100% 50%, 0 0);
+}
+
+/* sixth */
+.sixth-row {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-gap: 1rem;
+	text-align: center;
+	font-weight: 600;
+}
+
+.sixth-row img {
+	width: 100%;
+	height: 140px;
+}

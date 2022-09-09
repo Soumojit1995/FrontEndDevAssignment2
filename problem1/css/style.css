@@ -1,0 +1,83 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.parallax-1 {
+    width: 100%;
+    height: 100vh;
+    background: url('../images/pixels-photo-1.jpeg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.parallax-2 {
+    width: 100%;
+    height: 100vh;
+    background: url('../images/pixels-photo-2.jpeg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.parallax-3 {
+    width: 100%;
+    height: 100vh;
+    background: url('../images/pixels-photo-3.jpeg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+/* Styling the title of first parallax */
+.parallax-1 h2 {
+    margin: auto;
+    position: relative;
+    top: 45%;
+    width: 450px;
+    height: 32px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 28px;
+    font-family: Arial, sans-serif;
+}
+
+.para-1 {
+    padding: 50px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 17px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    line-height: 25px;
+}
+
+.para-1 h2 {
+    margin-bottom: 20px;
+}
+
+.para-2 {
+    text-align: center;
+    padding: 25px;
+    font-size: 17px;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.para-3 {
+    text-align: center;
+    padding: 25px;
+    font-size: 17px;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.parallax-2 .section-2,
+.parallax-3 .section-3 {
+    margin: auto;
+    position: relative;
+    top: 45%;
+}
